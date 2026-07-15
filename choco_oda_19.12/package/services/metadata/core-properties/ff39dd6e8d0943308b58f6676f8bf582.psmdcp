@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><coreProperties xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.openxmlformats.org/package/2006/metadata/core-properties"><dc:creator>OpenDesign</dc:creator><dc:description>ODA File Converter application features a graphical interface and a command-line interface, and accepts the following inputs:
+
+* Source directory
+* Target directory
+* Input file filter such as *.dwg (default is "*.dwg;*.dxf")
+* Output version/type
+* Recursive flag
+* Audit flag
+
+Upon execution, the application identifies all files in the specified source directory that match the specified filter, then loads and saves each of these files to the specified output directory as the specified output version/type.
+
+If the audit flag is enabled, an audit/repair operation will be applied to each file as it is loaded. If the recursive flag is enabled, subdirectories within the source directory will be processed recursively.</dc:description><dc:identifier>oda-file-converter</dc:identifier><version>19.12.0.0</version><keywords>oda file convert converter cad freecad</keywords><dc:title>ODA File Converter</dc:title><lastModifiedBy>choco, Version=0.10.11.0, Culture=neutral, PublicKeyToken=79d02ea9cad655eb;Microsoft Windows NT 10.0.16299.0;.NET Framework 4</lastModifiedBy></coreProperties>

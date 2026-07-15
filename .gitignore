@@ -1,0 +1,55 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+
+# Bundled runtimes, native dependencies, and installers
+oda/
+win7_runtime/
+*_extracted/
+*_full/
+*_files/
+*_image/
+*.exe
+*.dll
+*.pyd
+*.msi
+*.nupkg
+*.zip
+
+# CAD and generated test data
+tests/
+test/
+testdata/
+fixtures/
+*.dwg
+*.dxf
+*.jmtxt
+*_加密.jmtxt
+
+# Logs and local output
+*.log
+output/
+tmp/
+temp/
+
+# Credentials and private key material
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+secrets/
+private/
