@@ -13,6 +13,7 @@
 - 提取界址点坐标，去除相邻距离小于 `0.012` 的重复点，并闭合首尾点。
 - 计算面积，单位为公顷。
 - 输出包含以下内容的 UTF-8 BOM TXT：坐标系、分带、投影类型、计量单位、精度、带号、面积和界址点坐标。
+- 加密分支在 TXT 生成后额外输出同名的 `_加密.jmtxt`，不修改原 TXT。
 - 在 `ezdxf` 不可用或解析失败时，使用内置的基础 DXF 文本解析器作为回退路径。
 
 ## 使用方式
@@ -53,6 +54,7 @@ py -3.8 -m venv ..\.venv-win7
 依赖包括：
 
 - `ezdxf 1.1.4`：读取和写入 DXF
+- `gmssl 3.2.2`：加密分支生成兼容 `GisqTxtEncrypt` 的 SM2 密文
 - `numpy 1.21.6`、`fonttools 4.47.0`、`pyparsing 3.0.9`、`typing-extensions 4.7.1`
 - `pyinstaller 5.13.2`：生成 Windows 可执行文件
 

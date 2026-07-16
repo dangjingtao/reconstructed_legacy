@@ -15,6 +15,8 @@ import sys
 import tempfile
 import threading
 
+from gisq_txt_encrypt import encrypt_file
+
 
 TEMP_ODA_DIR = None
 ODA_EXE = None
@@ -409,8 +411,10 @@ def convert_dxf_to_txt(dxf_path, output_dir=None, mode="priority"):
             handle.write("{0},{1:.3f},1,1,面,,,,@\n".format(n, area))
             for i, (x, y) in enumerate(filtered_coords):
                 handle.write("J{0},1,{1:.3f},{2:.3f}\n".format(i + 1, x, y))
+        jmtxt_path = encrypt_file(txt_path)
         return True, {
             "txt_path": txt_path,
+            "jmtxt_path": jmtxt_path,
             "point_count": n,
             "area_ha": area,
             "txt_msg": "界址点{0}个，面积{1:.6f}公顷".format(n, area),
